@@ -16,9 +16,7 @@ void main() {
       backgroundColor: Colors.blueGrey,
       body: Center(
         child: Image(
-          image: NetworkImage(
-              'https://i.picsum.photos/id/451/536/354.jpg?hmac=7VnTTK3aycN14syFmsvBnoDkQLeMJoz-xepAcHaLpes'
-          ),
+          image: AssetImage('images/diamond.png'),
         ),
       ),
     )),
