@@ -12,12 +12,12 @@ class MyApp extends StatelessWidget {
           child: Scaffold(
             backgroundColor: Colors.teal,
             body: Column(
-              //mainAxisAlignment: MainAxisAlignment.center,
-              //crossAxisAlignment: CrossAxisAlignment.center,
+              mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 CircleAvatar(
                   radius: 50.0,
-                  backgroundImage: AssetImage('images/K.png'),
+                  backgroundColor: Colors.teal.shade700,
+                  backgroundImage: AssetImage('images/karan.jpg'),
                 ),
                 Text(
                   'Karan S',
@@ -39,47 +39,44 @@ class MyApp extends StatelessWidget {
                   ),
                 ),
                 Container(
-                  color: Colors.white,
-                  margin: EdgeInsets.symmetric(horizontal: 25.00, vertical: 20.00),
-                  padding: EdgeInsets.all(10.00),
-                  child: Row(
-                    children: [
-                      Icon(
-                        Icons.phone,
-                        color: Colors.teal,
-                      ),
-                      SizedBox(
-                        width: 10.0,
-                      ),
-                      Text(
-                        '+91 123 456 789',
-                        style: TextStyle(
-                          color: Colors.teal.shade700
-                        ),
-                      )
-                    ],
+                  margin: EdgeInsets.symmetric(vertical: 10.00),
+                  child: SizedBox(
+                    width: 170.00,
+                    child: Divider(
+                      color: Colors.teal.shade100,
+                    ),
                   ),
                 ),
-                Container(
-                  color: Colors.white,
+                Card(
+                  //color: Colors.white,
+                  margin: EdgeInsets.symmetric(horizontal: 25.00, vertical: 20.00),
+                  child: ListTile(
+                    leading: Icon(
+                      Icons.phone,
+                      color: Colors.teal,
+                    ),
+                    title:  Text(
+                      '+91 123 456 789',
+                      style: TextStyle(
+                          color: Colors.teal.shade700
+                      ),
+                    ),
+                  ),
+                ),
+                Card(
+                  //color: Colors.white,
                   margin: EdgeInsets.symmetric(horizontal: 25.00, vertical: 10.00),
-                  padding: EdgeInsets.all(10.00),
-                  child: Row(
-                    children: [
-                      Icon(
-                        Icons.email,
-                        color: Colors.teal,
+                  child: ListTile(
+                    leading: Icon(
+                      Icons.email,
+                      color: Colors.teal,
+                    ),
+                    title: Text(
+                      'karan.lagalwar@outlook.com',
+                      style: TextStyle(
+                          color: Colors.teal.shade700
                       ),
-                      SizedBox(
-                        width: 10.0,
-                      ),
-                      Text(
-                        'karan.lagalwar@outlook.com',
-                        style: TextStyle(
-                            color: Colors.teal.shade700
-                        ),
-                      )
-                    ],
+                    ),
                   ),
                 )
               ],
